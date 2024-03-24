@@ -8,23 +8,24 @@ body {
 
     margin: 0;
 
-    overflow: auto;
+    overflow: hidden
 }
 
 header h1 {
-    font-size: 90px;
+    font-size: 85px;
     color: rgb(43, 101, 236);
     text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
+
     font-weight: 900;
 }
 
 #user-name {
     font-size: 40px;
-
+    margin-bottom: 40px;
     color: lightcoral;
     text-align: center;
-    margin-top: 10px;
+
     font-weight: 600;
 
 }
@@ -35,18 +36,20 @@ header h1 {
     justify-content: center;
     align-items: center;
 
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     width: 260px;
-    height: 300px;
+    height: 310px;
     background-color: #b4acac;
     opacity: 0.7;
     border-radius: 12px;
-    margin: 55px;
+    margin: 40px;
     overflow: hidden;
-    justify-content: space-between;
+    justify-content: center;
     border: 1px black solid;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     transform-style: preserve-3d;
@@ -65,19 +68,16 @@ header h1 {
 
 
 .card-img {
-    flex-grow: 1;
     display: flex;
     justify-content: center;
-
     align-items: center;
-
 }
 
 .card-img img {
-    margin-top: 20px;
+    margin-top: 10px;
     max-width: 85%;
 
-    max-height: 100%;
+
 
     object-fit: cover;
 
@@ -87,7 +87,8 @@ header h1 {
 
 .card-footer {
     text-align: center;
-    margin-top: 60px;
+    height: 70px;
+    margin-top: 25px;
     color: rgb(172, 104, 180);
     font-size: 18px;
     font-weight: 300;
@@ -120,7 +121,7 @@ header h1 {
 
 .modal-content {
     background-color: rgb(228, 165, 83);
-    margin: 50px auto;
+    margin: 120px auto;
     padding: 20px;
     border: 2px solid #888;
     width: 750px;
@@ -313,6 +314,7 @@ p {
     font-size: 25px;
     font-weight: 400;
     color: aliceblue;
+    margin-top: 5px;
 
     transition: transform 0.3s ease;
 }
