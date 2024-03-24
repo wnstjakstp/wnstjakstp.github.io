@@ -1,0 +1,343 @@
+body {
+    background-image: url('https://media.giphy.com/media/oSYflamt3IEjm/giphy.gif');
+    background-size: cover;
+
+    background-position: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 90px;
+    color: rgb(43, 101, 236);
+    text-align: center;
+    margin-top: 220px;
+    font-weight: 900;
+}
+
+#user-name {
+    font-size: 40px;
+
+    color: lightcoral;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 110px;
+}
+
+.card {
+    width: 260px;
+    height: 390px;
+    background-color: #b4acac;
+    opacity: 0.7;
+    border-radius: 12px;
+    margin: 55px;
+    overflow: hidden;
+    justify-content: space-between;
+    border: 1px black solid;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-style: preserve-3d;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: rgb(228, 165, 83);
+    opacity: 1;
+    border: 3px solid #ff4500;
+    transform: rotateY(35deg);
+    box-shadow: 30px 40px 60px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.card-img {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.card-img img {
+    margin-top: 20px;
+    max-width: 85%;
+
+    max-height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+.card-footer {
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(172, 104, 180);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.more {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    height: 100%;
+
+    overflow: auto;
+
+    background-color: rgb(0, 0, 0);
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal-content {
+    background-color: rgb(228, 165, 83);
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 750px;
+    height: 600px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(172, 104, 180);
+    margin-left: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-about {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.about-img {
+    width: 180px;
+    height: auto;
+    border-radius: 7px;
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+}
+
+.content-about div {
+    color: blue;
+}
+
+
+
+
+
+.content-wrapper {
+    display: flex;
+
+
+}
+
+.content-wrapper img {
+    margin-right: 20px;
+    width: 200px;
+
+}
+
+.container-music {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+
+}
+
+.music-img {
+    width: 140px;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+}
+
+.music-img:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+#stop {
+    display: block;
+    margin: auto;
+    background-color: cornflowerblue;
+    color: #fefefe;
+    width: 65px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#stop:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+
+.container-game {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+
+}
+
+.game-img {
+    width: 170px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.game-img:hover {
+    transform: translateY(-15px);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.contact {
+    display: flex;
+    margin-left: 45px;
+
+}
+
+.phone {
+    color: cornflowerblue;
+
+}
+
+.phone:hover {
+    cursor: pointer;
+}
+
+
+
+.contact img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+
+.list-image {
+    width: 15px;
+
+    height: auto;
+
+    vertical-align: middle;
+
+}
+
+
+.more {
+    text-align: center;
+
+    padding-top: 20px;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: aliceblue;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+#footer:hover {
+    transform: translateY(-10px);
+
+}
+
+
+.container-f {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+
+}
+
+.f-img {
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+}

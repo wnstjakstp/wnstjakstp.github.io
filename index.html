@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="shortcut icon" href="images/lo.ico">
+    <meta property="og:image" content="images/lo.jpeg">
+    <meta property="og:title" content="김준서 자기소개페이지">
+    <meta property="og:description" content="멋쟁이사자처럼 12기 김준서 자기소개 페이지 과제">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/home.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>"Welcome aboard!"</h1>
+        </header>
+        <div id="name-input">
+            <input type="text" id="name" name="name" placeholder="enter your name!">
+            <button onclick="startInt()">start</button>
+
+        </div>
+    </div>
+    <div id="music">
+        <button onclick="playAudio()" type="button">music</button>
+
+    </div>
+
+    <audio id="myAudio" src="audio/music.mp3"></audio>
+
+    <script src="js/home.js"></script>
+</body>
+
+
+</html>
