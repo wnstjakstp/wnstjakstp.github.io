@@ -74,12 +74,9 @@ header h1 {
 }
 
 .card-img img {
-    margin-top: 5px;
-    max-width: 85%;
 
-
-
-    object-fit: cover;
+    max-width: 80%;
+    object-fit: contain;
 
 }
 
